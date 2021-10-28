@@ -22,7 +22,7 @@ db.once('open', async () => {
       description:
         'Antibiotic free Angus Beef Outside Skirt Steak',
       image: 'Skirt-Steak.jpg',
-      category: categories[0]._id,
+      category: categories[2]._id,
       price: 13.28,
       quantity: 7
     },
@@ -46,7 +46,7 @@ db.once('open', async () => {
     },
     {
       name: 'Cranberry Jam',
-      category: categories[1]._id,
+      category: categories[3]._id,
       description:
         'Merry, bright and full of festive flavors, this cranberry sauce gets a dose of holiday cheer from citrusy orange zest, warm spices and a splash of brandy. Serve it alongside a celebratory roast, spread it on a turkey sandwich or pair it with a cheese plate!',
       image: 'Cranberries.jpg',
