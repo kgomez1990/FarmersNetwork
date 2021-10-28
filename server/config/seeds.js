@@ -22,7 +22,7 @@ db.once('open', async () => {
       description:
         'Antibiotic free Angus Beef Outside Skirt Steak',
       image: 'Skirt-Steak.jpg',
-      category: categories[0]._id,
+      category: categories[2]._id,
       price: 13.28,
       quantity: 7
     },
@@ -36,7 +36,7 @@ db.once('open', async () => {
       quantity: 100
     },
     {
-      name: 'Organic Detroit Dark Red Beets - 5LB',
+      name: 'Organic Detroit Dark Red Beets - 5lb',
       category: categories[1]._id,
       description:
         'Detroit Dark Red has been the preferred choice for homegrown classic American beets. Introduced in 1892 by Detroit’s world famous D.M. Ferry Seed Company, the American red beet eventually adopted the moniker “Detroit” since it became known that the best beets hailed from the “Motor City”. The 2-3" globe-shaped roots are tender and sweet. A dual-purpose vegetable, the deep green tops can be cooked like swiss chard.',
@@ -46,7 +46,7 @@ db.once('open', async () => {
     },
     {
       name: 'Cranberry Jam',
-      category: categories[1]._id,
+      category: categories[3]._id,
       description:
         'Merry, bright and full of festive flavors, this cranberry sauce gets a dose of holiday cheer from citrusy orange zest, warm spices and a splash of brandy. Serve it alongside a celebratory roast, spread it on a turkey sandwich or pair it with a cheese plate!',
       image: 'Cranberries.jpg',

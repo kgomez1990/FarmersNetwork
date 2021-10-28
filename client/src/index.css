@@ -144,6 +144,9 @@ input:focus {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
 }
 
 .space-between {
@@ -201,6 +204,39 @@ input:focus {
 
 .error-text {
   color: var(--error);
+}
+
+.form-control,
+.form-label,
+.productButton {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.mb-3 {
+  margin-top: 150px;
+}
+
+.form-control {
+  width: 300px;
+}
+
+#exampleFormControlTextarea2 {
+  height: 150px;
+  width: 450px;
+  border: black solid 4px;
+}
+
+#exampleFormControlInput2 {
+  border: black solid 3px;
+}
+
+.form-label {
+  font-size: 25px;
 }
 
 @media screen and (max-width: 768px) {
