@@ -36,7 +36,7 @@ db.once('open', async () => {
       quantity: 100
     },
     {
-      name: 'Organic Detroit Dark Red Beets - 5LB',
+      name: 'Organic Detroit Dark Red Beets - 5lb',
       category: categories[1]._id,
       description:
         'Detroit Dark Red has been the preferred choice for homegrown classic American beets. Introduced in 1892 by Detroit’s world famous D.M. Ferry Seed Company, the American red beet eventually adopted the moniker “Detroit” since it became known that the best beets hailed from the “Motor City”. The 2-3" globe-shaped roots are tender and sweet. A dual-purpose vegetable, the deep green tops can be cooked like swiss chard.',
