@@ -1,7 +1,7 @@
 :root {
-  --primary: #232F3E;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
+  --primary:   #28a745;
+  --secondary:  #5bbd6d;
+  --tertiary: #556b2f;
   --light: #fafafa;
   --dark: #272f32;
   --error: rgb(228, 46, 1);
@@ -76,11 +76,12 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 header {
   background: var(--primary);
+  
 }
 
 header a {
@@ -97,8 +98,11 @@ button {
   cursor: pointer;
   margin: 0 1px;
   background-color: var(--secondary);
+  
 }
-
+.addtocart{
+  width: 100%;
+}
 button:hover {
   opacity: .8;
 }
@@ -139,14 +143,65 @@ input:focus {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  
 }
+
+
+/* here begins our modified style */
+
+.card{
+  margin-top: 30px;
+  margin-left: 30px;
+  padding: 5px 5px;
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  transition: transform .2s;
+  background-color: var(--primary);
+}
+.card:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+footer {
+  text-align: center;
+  background-color: var(--primary);
+}
+ 
+.footerText{
+  text-align: center;
+}
+
+.container{
+ background-image: url(./images1/login_background.jpg);
+
+}
+.flex-column{
+  background-image: url(./images1/login_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.getIn{
+  border:solid var(--primary);
+  align-items: center;
+}
+
+.searchBar{
+  margin-top: 14px;
+}
+
+
+
+
+/* here ends our modified style */
 
 .flex-row {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  max-width: 100%;
+  
 }
 
 .space-between {
@@ -206,41 +261,12 @@ input:focus {
   color: var(--error);
 }
 
-.form-control,
-.form-label,
-.productButton {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction:column;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-}
-
-.mb-3 {
-  margin-top: 150px;
-}
-
-.form-control {
-  width: 300px;
-}
-
-#exampleFormControlTextarea2 {
-  height: 150px;
-  width: 450px;
-  border: black solid 4px;
-}
-
-#exampleFormControlInput2 {
-  border: black solid 3px;
-}
-
-.form-label {
-  font-size: 25px;
-}
-
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
   }
+
+  
 }
+
+
