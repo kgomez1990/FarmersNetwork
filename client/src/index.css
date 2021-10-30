@@ -73,6 +73,7 @@ a {
   color: var(--tertiary);
   text-decoration: none;
   font-weight: bold;
+  
 }
 
 a:hover {
@@ -149,7 +150,7 @@ input:focus {
 
 /* here begins our modified style */
 
-.card{
+.Itemscard{
   margin-top: 30px;
   margin-left: 30px;
   padding: 5px 5px;
@@ -158,6 +159,7 @@ input:focus {
   text-align: center;
   transition: transform .2s;
   background-color: var(--primary);
+  
 }
 .card:hover{
   -ms-transform: scale(1.1); /* IE 9 */
@@ -174,13 +176,8 @@ footer {
   text-align: center;
 }
 
-.container{
- background-image: url(./images1/login_background.jpg);
-
-}
 .flex-column{
-  background-image: url(./images1/login_background.jpg);
-  background-repeat: no-repeat;
+  background-image: url(./assets/images/login_background.jpg);
   background-size: cover;
 }
 
@@ -193,7 +190,11 @@ footer {
   margin-top: 14px;
 }
 
-
+.d-block{
+margin-top: 20px;
+margin-bottom: 20px;
+height: 400px;
+}
 
 
 /* here ends our modified style */

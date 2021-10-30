@@ -78,7 +78,9 @@ const Cart = () => {
   }
 
   return (
-    <div className="cart">
+    
+     <div className="cart" >
+    
       <div className="close" onClick={toggleCart}>
       <button>Close</button>
       </div>
@@ -109,6 +111,7 @@ const Cart = () => {
         </h3>
       )}
     </div>
+    
   );
 };
 

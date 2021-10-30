@@ -7,7 +7,7 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul className="flex-row">
+        <ul className="flex-column">
           <li className="mx-1">
             <Link to="/orderHistory">
               Order History
@@ -28,7 +28,7 @@ function Nav() {
       );
     } else {
       return (
-        <ul className="flex-row">
+        <ul className="flex-column">
           <li className="mx-1">
             <Link to="/signup">
               Signup
@@ -52,8 +52,9 @@ function Nav() {
           FarmerNetwork
         </Link>
       </h1>
+
       {/* search bar added */}
-      <form action="/" method="get" className="flex-column  searchBar">
+      <form action="/" method="get" className="  searchBar">
         <label htmlFor="header-search">
           <span className="visually-hidden">Search your items</span>
         </label>
