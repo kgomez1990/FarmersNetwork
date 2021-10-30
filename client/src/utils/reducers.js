@@ -8,7 +8,8 @@ import {
   UPDATE_CATEGORIES,
   UPDATE_CURRENT_CATEGORY,
   CLEAR_CART,
-  TOGGLE_CART
+  TOGGLE_CART,
+  ADD_PRODUCT
 } from "./actions";
 
 export const reducer = (state, action) => {
@@ -25,7 +26,11 @@ export const reducer = (state, action) => {
         cartOpen: true,
         cart: [...state.cart, action.product],
       };
-
+    case ADD_PRODUCT:
+      return {
+        ...state,
+        products: [...action.products],
+      }
     case ADD_MULTIPLE_TO_CART:
       return {
         ...state,
