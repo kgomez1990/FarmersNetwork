@@ -17,6 +17,9 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "bootstrap": "^5.1.3",
+    "parse-form": "^2.1.0",
+    "q-flat": "^0.2.3",
+    "react-bootstrap": "^2.0.1"
   }
 }

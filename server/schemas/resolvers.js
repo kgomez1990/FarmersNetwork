@@ -96,6 +96,18 @@ const resolvers = {
 
       return { token, user };
     },
+    addProduct: async (parent, product, context) => {
+      if (context.user) {
+        const product = await Product.create(product);
+
+        await User.findByIdAndUpdate(context.user._id, { $push: { products: product } });
+
+        return product;
+      }
+
+      throw new AuthenticationError('Not logged in');
+      
+    },
     addOrder: async (parent, { products }, context) => {
       console.log(context);
       if (context.user) {

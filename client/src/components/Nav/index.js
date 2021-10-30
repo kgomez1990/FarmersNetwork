@@ -2,6 +2,7 @@ import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 
+
 function Nav() {
 
   function showNavigation() {
@@ -14,7 +15,7 @@ function Nav() {
             </Link>
           </li>
           <li className="mx-1">
-            <Link to="/Profile">
+            <Link to="/NewListing">
               Create New Listing
             </Link>
           </li>
