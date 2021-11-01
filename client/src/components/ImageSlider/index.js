@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CarouselContainer = () => {
     return (
-        <Carousel class="imageslider">
+        <Carousel className="imageslider">
             <Carousel.Item interval={1000}>
                 <img
                     className="d-block w-100 "

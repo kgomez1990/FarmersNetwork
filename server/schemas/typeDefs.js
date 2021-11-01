@@ -7,7 +7,7 @@ const typeDefs = gql`
   }
 
   type Product {
-    _id: ID!
+    _id: ID
     name: String
     description: String
     image: String
@@ -54,7 +54,7 @@ const typeDefs = gql`
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     updateProduct(_id: ID!, quantity: Int!): Product
     login(email: String!, password: String!): Auth
-    addProduct(name: String!, description: String!, price: Float!, categoryId: ID!): Product
+    createProduct(product: String!, description: String!, price: Float!, categoryId: ID!, image: String): Product
   }
 `;
 

@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { QUERY_CATEGORIES } from "../utils/queries";
+import { useQuery } from "@apollo/client";
+import { useMutation } from '@apollo/client';
+import { CREATE_PRODUCT } from "../utils/mutations";
 
 function NewListing() {
   const [newProduct, setNewProduct] = useState({
@@ -6,7 +10,11 @@ function NewListing() {
     description: "",
     price: 0.99,
     categoryId: "",
+    image: "images/stock-farmer.jpg"
   });
+  const {loading,data}=useQuery(QUERY_CATEGORIES);
+  
+  const [ addProduct, {error}] = useMutation(CREATE_PRODUCT);
 
   const handleChange = (e) => {
     setNewProduct({
@@ -14,7 +22,22 @@ function NewListing() {
       [e.target.id]: e.target.value,
     });
   };
+  const createNewProduct = async (e) => {
+    e.preventDefault()
+    try {
+      // Execute mutation and pass in defined parameter data as variables
+      const {data} =  await addProduct({
+        variables: { newProduct },
+      });
 
+      window.location.reload();
+    } catch (err) {
+      console.error(err);
+    }
+    //call mutation 
+    //on success redirect user
+    window.location.assign("/")
+  }
   //   const handleChange = ({ target: {id, value} }) => {
   //     setNewProduct({
   //         ...newProduct,
@@ -63,16 +86,16 @@ function NewListing() {
 
       <div className="form-group">
         <label>Example select</label>
-        <select className="form-control" id="categoryId">
-          <option>Fruit</option>
-          <option>Vegetables</option>
-          <option>Meat</option>
-          <option>Jarred and Canned Goods</option>
-          <option>Plants and Seeds</option>
+        <select className="form-control" onChange={handleChange} id="categoryId">
+          {data && data.categories ? data.categories.map(cat => {
+            return (
+              <option value={cat._id} key={cat._id}>{cat.name}</option>
+            )
+          }):""}
         </select>
       </div>
 
-      {/* <pre>{JSON.stringify(newProduct, null, 2)}</pre> */}
+      <pre>{JSON.stringify(newProduct, null, 2)}</pre>
 
       <div className="mb-3">
         <label className="form-label">Description</label>
@@ -81,11 +104,9 @@ function NewListing() {
           id="description"
           rows="3"
           placeholder="Please Enter Description of Products"
-          onChange={handleChange}
-        ></textarea>
-        \
+          onChange={handleChange}></textarea>
         <a href="/">
-          <button className="productButton">Post Your Listing</button>
+          <button className="productButton" onClick= {createNewProduct} >Post Your Listing</button>
         </a>
       </div>
     </div>
