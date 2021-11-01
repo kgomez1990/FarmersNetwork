@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lora:ital@1&display=swap');
 :root {
   --primary:   #28a745;
   --secondary:  #5bbd6d;
@@ -11,6 +12,7 @@
 
 * {
   box-sizing: border-box;
+  font-family:'Courgette', cursive;
 }
 
 html,
@@ -34,7 +36,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;

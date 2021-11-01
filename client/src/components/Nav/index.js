@@ -50,19 +50,19 @@ function Nav() {
       <h1>
         <Link to="/">
           <span role="img" aria-label="shopping bag">🌾🌻🌽</span>
-          FarmerNetwork
+          Farmer's Network
         </Link>
       </h1>
 
       {/* search bar added */}
       <form action="/" method="get" className="  searchBar">
         <label htmlFor="header-search">
-          <span className="visually-hidden">Search your items</span>
+          <span className="visually-hidden">Search Listings</span>
         </label>
         <input
           type="text"
           id="header-search"
-          placeholder="Search your items"
+          placeholder="Enter a product..."
           name="s"
         />
         <button type="submit">Search</button>

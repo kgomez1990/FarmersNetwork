@@ -96,7 +96,7 @@ const resolvers = {
 
       return { token, user };
     },
-    addProduct: async (parent, product, context) => {
+    createProduct: async (parent, product, context) => {
       if (context.user) {
         const product = await Product.create(product);
 
