@@ -15,8 +15,8 @@ const Home = () => {
       </div>
       <footer className="flex-column px-1  ">
         <a>
-          <ul> &copy;FarmerNetwork</ul>
-          <ul>Dalton Rajesh Karim JHU-Boot-Camp-2021</ul>
+          <ul> &copy;Farmer's Network</ul>
+          <ul>Dalton Uhl, Rajesh Gautam, Karim Gomez * JHU-Boot-Camp-2021 * </ul>
         </a>
       </footer>
     </div>

@@ -10,7 +10,7 @@ function NewListing() {
     description: "",
     price: 0.99,
     categoryId: "",
-    image: "public/images/stock-farmer.jpg"
+    image: "stock-farmer.jpg"
   });
   const {loading,data}=useQuery(QUERY_CATEGORIES);
   
@@ -24,10 +24,11 @@ function NewListing() {
   };
   const createNewProduct = async (e) => {
     e.preventDefault()
+    console.log(newProduct)
     try {
       // Execute mutation and pass in defined parameter data as variables
       const {data} =  await addProduct({
-        variables: { newProduct },
+        variables: { ...newProduct },
       });
 
       //window.location.reload();

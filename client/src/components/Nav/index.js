@@ -11,12 +11,12 @@ function Nav() {
         <ul className="flex-columnNav">
           <li className="mx-1">
             <Link to="/orderHistory" className="addCartNav">
-              Order History
+            <button style={{borderRadius:"15px"}} className="navBtns">Order History</button>
             </Link>
           </li>
           <li className="mx-1">
             <Link to="/NewListing" className="addCartNav">
-              Create New Listing
+            <button style={{borderRadius:"15px"}} className="navBtns">Create New Listing</button>
             </Link>
           </li>
           <li className="mx-1">
@@ -51,7 +51,7 @@ function Nav() {
         <Link to="/">
           <span role="img" aria-label="shopping bag">🌾🌻🌽</span>
         </Link>
-        <h3>Farmer's Network</h3>
+        <h3 >Farmer's Network</h3>
       </h1>
 
       {/* search bar added */}
