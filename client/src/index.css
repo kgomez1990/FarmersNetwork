@@ -39,6 +39,8 @@ h6 {
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
+  color: yellow;
+  font-weight: bolder;
 }
 
 h1 {
@@ -145,10 +147,32 @@ input:focus {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#addCart {
+  background-color: yellow;
+  color: blue;
+  font-size: 18px;
+}
+
+.addCartNav {
+  color: yellow;
+  font-size: 18px;
   
 }
 
+.flex-columnNav {
+display: flex;
+flex-direction: column;
+}
 
+.carouselHeader {
+  font-size: 35px;
+}
+
+.carouselPara {
+  font-size: 23px;
+}
 /* here begins our modified style */
 
 .Itemscard{
@@ -181,6 +205,8 @@ footer {
   background-image: url(./assets/images/login_background.jpg);
   background-size: cover;
 }
+
+
 
 .getIn{
   border:solid var(--primary);
@@ -217,6 +243,7 @@ height: 400px;
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
+  color: blue;
 }
 
 .mx-2 {
