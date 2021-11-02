@@ -20,6 +20,7 @@ body {
   min-height: 100%;
 }
 
+
 body {
   margin: 0;
   padding: 0;
@@ -96,7 +97,7 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: 20px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -151,8 +152,9 @@ input:focus {
 
 #addCart {
   background-color: yellow;
-  color: blue;
+  color: rgb(0, 0, 0);
   font-size: 18px;
+  border-radius: 15px;
 }
 
 .addCartNav {
@@ -243,7 +245,7 @@ height: 400px;
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
-  color: blue;
+  color: black;
 }
 
 .mx-2 {
