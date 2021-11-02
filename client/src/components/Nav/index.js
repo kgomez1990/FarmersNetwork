@@ -22,7 +22,7 @@ function Nav() {
           <li className="mx-1">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
             <a href="/" className="addCartNav" onClick={() => Auth.logout()}>
-              Logout
+            <button style={{borderRadius:"15px"}} className="navBtns">Logout</button>
             </a>
           </li>
         </ul>
@@ -32,12 +32,12 @@ function Nav() {
         <ul className="flex-columnNav">
           <li className="mx-1">
             <Link to="/signup" className="addCartNav">
-              Signup
+              <button style={{borderRadius:"15px"}} className="navBtns">Signup</button>
             </Link>
           </li>
           <li className="mx-1">
             <Link to="/login" className="addCartNav">
-              Login
+            <button style={{borderRadius:"15px"}} className="navBtns">Login</button>
             </Link>
           </li>
         </ul>
@@ -65,7 +65,7 @@ function Nav() {
           placeholder="Enter a product..."
           name="s"
         />
-        <button type="submit">Search</button>
+        <button style={{borderRadius:"3px"}}type="submit">Search</button>
       </form>
 
       <nav>

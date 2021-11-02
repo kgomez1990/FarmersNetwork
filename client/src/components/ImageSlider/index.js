@@ -14,7 +14,7 @@ const CarouselContainer = () => {
                 />
                 <Carousel.Caption>
                     <h3 className="carouselHeader">Welcome to the Farmer's Network!</h3>
-                    <p className="carouselPara">Your Online Blog for Local's looking for Fresh Produce at an affordable Price!</p>
+                    <p className="carouselPara">Your Online Blog for Locals looking for Fresh Produce at an affordable Price!</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={500}>
@@ -24,8 +24,8 @@ const CarouselContainer = () => {
                     alt="Second slide"
                 />
                 <Carousel.Caption>
-                    <h3 className="carouselHeader">Interested in a Local Farmer's Produce?</h3>
-                    <p className="carouselPara">Look no further! Farmer's from all over are able to post and sell their products here!</p>
+                    <h3 className="carouselHeader">Farm fresh food at your fingertips, while supporting local businesses! </h3>
+                    <p className="carouselPara">Farmers from all over are able to post and sell their products here!</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item >
@@ -36,7 +36,7 @@ const CarouselContainer = () => {
                 />
                 <Carousel.Caption>
                     <h3 className="carouselHeader">Interested in Selling your products?</h3>
-                    <p className="carouselPara">Anyone with fresh produce is able to post their products here. Please create an account with us and start Posting!!!</p>
+                    <p className="carouselPara">Anyone selling fresh produce, preserved goods, plants etc. is able to post their products for sale here. Please create an account with us and start posting!!!</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
