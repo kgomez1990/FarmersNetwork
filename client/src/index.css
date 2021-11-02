@@ -149,16 +149,18 @@ input:focus {
   margin-left: auto;
   margin-right: auto;
 }
-
+.container.h2, .my-1.h2 {
+  color: rgb(211, 208, 67);
+}
 #addCart {
-  background-color: yellow;
+  background-color: rgb(195, 206, 46);
   color: rgb(0, 0, 0);
   font-size: 18px;
   border-radius: 15px;
 }
 
 .addCartNav {
-  color: yellow;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   
 }
