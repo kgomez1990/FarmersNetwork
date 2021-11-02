@@ -12,13 +12,13 @@ export const LOGIN = gql`
 `;
 
 export const CREATE_PRODUCT = gql`
-  mutation createProduct($product: String!, 
-    $description: String!, 
-    $price: Float!, 
-    $categoryId: ID!, 
+  mutation createProduct($name: String!, 
+    $description: String, 
+    $price: Float, 
+    $categoryId: ID, 
     $image: String)
   {
-    createProduct(product: $product, 
+    createProduct(name: $name, 
       description: $description, 
       price: $price, 
       categoryId: $categoryId, 

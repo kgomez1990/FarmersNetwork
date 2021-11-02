@@ -6,11 +6,11 @@ import { CREATE_PRODUCT } from "../utils/mutations";
 
 function NewListing() {
   const [newProduct, setNewProduct] = useState({
-    product: "",
+    name: "",
     description: "",
     price: 0.99,
     categoryId: "",
-    image: "images/stock-farmer.jpg"
+    image: "public/images/stock-farmer.jpg"
   });
   const {loading,data}=useQuery(QUERY_CATEGORIES);
   
@@ -30,7 +30,7 @@ function NewListing() {
         variables: { newProduct },
       });
 
-      window.location.reload();
+      //window.location.reload();
     } catch (err) {
       console.error(err);
     }
@@ -66,7 +66,7 @@ function NewListing() {
         <input
           type="text"
           className="form-control"
-          id="product"
+          id="name"
           placeholder="Please Enter Item for Sale"
           onChange={handleChange}
         ></input>
@@ -95,7 +95,7 @@ function NewListing() {
         </select>
       </div>
 
-      <pre>{JSON.stringify(newProduct, null, 2)}</pre>
+      {/* <pre>{JSON.stringify(newProduct, null, 2)}</pre> */}
 
       <div className="mb-3">
         <label className="form-label">Description</label>
