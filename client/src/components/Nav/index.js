@@ -8,20 +8,20 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
-        <ul className="flex-column">
+        <ul className="flex-columnNav">
           <li className="mx-1">
-            <Link to="/orderHistory">
+            <Link to="/orderHistory" className="addCartNav">
               Order History
             </Link>
           </li>
           <li className="mx-1">
-            <Link to="/NewListing">
+            <Link to="/NewListing" className="addCartNav">
               Create New Listing
             </Link>
           </li>
           <li className="mx-1">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
+            <a href="/" className="addCartNav" onClick={() => Auth.logout()}>
               Logout
             </a>
           </li>
@@ -29,14 +29,14 @@ function Nav() {
       );
     } else {
       return (
-        <ul className="flex-column">
+        <ul className="flex-columnNav">
           <li className="mx-1">
-            <Link to="/signup">
+            <Link to="/signup" className="addCartNav">
               Signup
             </Link>
           </li>
           <li className="mx-1">
-            <Link to="/login">
+            <Link to="/login" className="addCartNav">
               Login
             </Link>
           </li>
@@ -50,8 +50,8 @@ function Nav() {
       <h1>
         <Link to="/">
           <span role="img" aria-label="shopping bag">🌾🌻🌽</span>
-          Farmer's Network
         </Link>
+        <h3>Farmer's Network</h3>
       </h1>
 
       {/* search bar added */}
